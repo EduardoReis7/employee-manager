@@ -9,3 +9,10 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     command: --innodb-use-native-aio=0
+
+  postgresql:
+    container_name: postgresql
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: root
